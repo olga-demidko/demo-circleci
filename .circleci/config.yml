@@ -12,6 +12,7 @@ jobs:
     steps:
     - nexploit/scan:
         scan_name: CircleCI Scan New
+        hostname: https://app.neuralegion.com
         api_key: NEURALEGION_API_KEY
         discovery_types: 'crawler'
         crawlers: 'https://www.random1.org/,https://www.random2.org/'
