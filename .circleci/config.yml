@@ -19,6 +19,12 @@ jobs:
         headers: 'Content-Type: application/json;Keep-Alive: timeout=5, max=1000'
         type: appscan
         protocol: http
+nexploit_job:
+    description: Retest a scan and wait for results
+    usage:
+      version: 2.1
+      orbs:
+        nexploit: neuralegion/nexploit@2.0
 
 
 # Invoke jobs via workflows
@@ -29,5 +35,3 @@ workflows:
       - nexploit/retest-and-poll:
           scan_id: 7MeuiCeFc25WdJBamaaTG
           api_key: NEXPLOIT_API_KEY
-
-
