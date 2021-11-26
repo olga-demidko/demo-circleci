@@ -12,12 +12,12 @@ jobs:
     steps:
     - nexploit/scan:
         scan_name: CircleCI Scan New
-        hostname: https://app.neuralegion.com
         api_key: NEURALEGION_API_KEY
         discovery_types: 'crawler'
         crawlers: 'https://www.random1.org/,https://www.random2.org/'
         host_filters: 'random1.org,random2.org'
-        headers: 'Content-Type: application/json;Keep-Alive: timeout=5, max=1000'
+        headers: 'Content-Type: application/json;Keep-Alive: timeout=1, max=1000'
+        hostname: 'https://app.neuralegion.com'
         type: appscan
         protocol: http
 nexploit_job:
