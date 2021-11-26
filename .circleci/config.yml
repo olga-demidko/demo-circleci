@@ -36,4 +36,4 @@ workflows:
       - nexploit/retest-and-poll: 
           hostname: 'https://app.neuralegion.com'
           scan_id: 7MeuiCeFc25WdJBamaaTG
-          api_key: NEXPLOIT_API_KEY
+          api_key: NEURALEGION_API_KEY
